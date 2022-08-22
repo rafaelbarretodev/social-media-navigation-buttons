@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Lesson coding -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Navigation Buttons</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <span class="close-btn">
+      <i class="fa-solid fa-xmark"></i>
+    </span>
+
+    <div class="media-icons">
+      <a href="#" style="background: #E60023;">
+        <i class="fa-brands fa-pinterest"></i>
+        <span class="tooltip" style="color: #E60023;">Pinterest</span>
+      </a>
+      <a href="#" style="background: #0E76A8;">
+        <i class="fa-brands fa-linkedin"></i>
+        <span class="tooltip" style="color: #0E76A8;">LinkedIn</span>
+      </a>
+      <a href="#" style="background: #FF0000;">
+        <i class="fa-brands fa-youtube"></i>
+        <span class="tooltip" style="color: #FF0000;">YouTube</span>
+      </a>
+      <a href="#" style="background: #EA4689;">
+        <i class="fa-brands fa-instagram"></i>
+        <span class="tooltip" style="color: #EA4689;">Instagram</span>
+      </a>
+      <a href="#" style="background: #8E36FF;">
+        <i class="fa-brands fa-github"></i>
+        <span class="tooltip" style="color: #8E36FF;">GitHub</span>
+      </a>
+      <a href="#" style="background: #4267B2;">
+        <i class="fa-brands fa-facebook-f"></i>
+        <span class="tooltip" style="color: #4267B2;">Facebook</span>
+      </a>
+      <a href="#" style="background: #1DA1F2;">
+        <i class="fa-brands fa-twitter"></i>
+        <span class="tooltip" style="color: #1DA1F2;">Twitter</span>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const closeBtn = document.querySelector(".close-btn");
+
+    closeBtn.addEventListener("click", () => {
+      closeBtn.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>
